@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MotoVélocity - Catálogo de motos en Trujillo, Perú">
+  <meta name="keywords" content="motos, motocicletas, yamaha, honda, peru">
+  <meta name="author" content="MotoVélocity">
+  <title>MotoVélocity - Catálogo</title>
+ 
+  <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+ 
+<body>
+ 
+  <!-- ========================
+       ENCABEZADO CON MENÚ
+  ======================== -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link"><img src="logo_pagina.png" alt="MotoVélocity" class="logo-img"></a>
+ 
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html" class="active">Catálogo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+ 
+  <main>
+ 
+    <!-- ========================
+         CATÁLOGO DE MOTOS
+    ======================== -->
+    <section id="catalogo" class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Nuestro Catálogo</h2>
+        <p class="subtitulo-seccion">Encuentra la moto que se adapta a tu estilo de vida.</p>
+ 
+        <div class="grid-motos">
+ 
+          <!-- Tarjeta 1 -->
+          <div class="tarjeta-moto">
+            <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?w=500&q=80"
+                 alt="Yamaha YZF-R3">
+            <div class="tarjeta-info">
+              <span class="marca">Yamaha</span>
+              <h3>YZF-R3</h3>
+              <p>Motor 321cc, 42 HP. Perfecta para iniciarse en el mundo sport.</p>
+              <p class="precio">S/. 16,990</p>
+              <a href="contacto.html" class="boton-tarjeta">Consultar</a>
+            </div>
+          </div>
+ 
+          <!-- Tarjeta 2 -->
+          <div class="tarjeta-moto">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=500&q=80"
+                 alt="Honda CB 300R">
+            <div class="tarjeta-info">
+              <span class="marca">Honda</span>
+              <h3>CB 300R</h3>
+              <p>Motor 286cc, 31 HP. Estilo naked moderno y muy ágil en ciudad.</p>
+              <p class="precio">S/. 14,500</p>
+              <a href="contacto.html" class="boton-tarjeta">Consultar</a>
+            </div>
+          </div>
+ 
+          <!-- Tarjeta 3 -->
+          <div class="tarjeta-moto">
+            <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?w=500&q=80"
+                 alt="Kawasaki Ninja 400">
+            <div class="tarjeta-info">
+              <span class="marca">Kawasaki</span>
+              <h3>Ninja 400</h3>
+              <p>Motor 399cc, 45 HP. La deportiva más popular en su categoría.</p>
+              <p class="precio">S/. 19,800</p>
+              <a href="contacto.html" class="boton-tarjeta">Consultar</a>
+            </div>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+ 
+ 
+    <!-- ========================
+         TABLA DE MODELOS
+    ======================== -->
+    <section id="modelos" class="seccion seccion-oscura">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Comparativa de Modelos</h2>
+        <p class="subtitulo-seccion">Revisa las especificaciones de nuestros modelos más vendidos.</p>
+ 
+        <div class="tabla-contenedor">
+          <table>
+            <thead>
+              <tr>
+                <th>Modelo</th>
+                <th>Cilindrada</th>
+                <th>Potencia</th>
+                <th>Peso</th>
+                <th>Precio (S/.)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Yamaha YZF-R3</td>
+                <td>321 cc</td>
+                <td>42 HP</td>
+                <td>169 kg</td>
+                <td>16,990</td>
+              </tr>
+              <tr>
+                <td>Honda CB 300R</td>
+                <td>286 cc</td>
+                <td>31 HP</td>
+                <td>147 kg</td>
+                <td>14,500</td>
+              </tr>
+              <tr>
+                <td>Kawasaki Ninja 400</td>
+                <td>399 cc</td>
+                <td>45 HP</td>
+                <td>167 kg</td>
+                <td>19,800</td>
+              </tr>
+              <tr>
+                <td>Yamaha MT-07</td>
+                <td>689 cc</td>
+                <td>73 HP</td>
+                <td>184 kg</td>
+                <td>32,900</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+ 
+ 
+    <!-- ========================
+         GALERÍA / MULTIMEDIA
+    ======================== -->
+    <section id="galeria" class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Galería</h2>
+        <p class="subtitulo-seccion">Algunas imágenes de nuestra colección.</p>
+ 
+        <div class="galeria-grid">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80"
+               alt="Moto deportiva en carretera">
+          <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?w=600&q=80"
+               alt="Motor de motocicleta">
+          <img src="https://images.unsplash.com/photo-1558981033-0f0309284409?w=600&q=80"
+               alt="Motociclistas en grupo">
+          <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?w=600&q=80"
+               alt="Yamaha MT-07">
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+ 
+  <!-- ========================
+       PIE DE PÁGINA
+  ======================== -->
+  <footer>
+    <div class="contenedor">
+      <div class="footer-contenido">
+ 
+        <div class="footer-marca">
+          <h3 class="logo">MOTO<span>VÉLOCITY</span></h3>
+          <p>Tu tienda de motos de confianza en Trujillo, Perú.</p>
+        </div>
+ 
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+ 
+        <div class="footer-links">
+          <h4>Marcas</h4>
+          <ul>
+            <li><a href="catalogo.html">Yamaha</a></li>
+            <li><a href="catalogo.html">Honda</a></li>
+            <li><a href="catalogo.html">Kawasaki</a></li>
+            <li><a href="catalogo.html">BMW</a></li>
+          </ul>
+        </div>
+ 
+      </div>
+ 
+      <p class="footer-copy">© 2025 MotoVélocity. Todos los derechos reservados. | Trujillo, Perú</p>
+    </div>
+  </footer>
+ 
+  <!-- Archivo JavaScript externo -->
+  <script src="script.js"></script>
+ 
+</body>
+</html>

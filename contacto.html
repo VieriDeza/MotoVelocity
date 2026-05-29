@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MotoVélocity - Contacto - Tienda de motos en Trujillo, Perú">
+  <meta name="keywords" content="motos, motocicletas, yamaha, honda, peru">
+  <meta name="author" content="MotoVélocity">
+  <title>MotoVélocity - Contacto</title>
+ 
+  <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+ 
+<body>
+ 
+  <!-- ========================
+       ENCABEZADO CON MENÚ
+  ======================== -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo-link"><img src="logo_pagina.png" alt="MotoVélocity" class="logo-img"></a>
+ 
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="catalogo.html">Catálogo</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html" class="active">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+ 
+  <main>
+ 
+    <!-- ========================
+         FORMULARIO DE CONTACTO
+    ======================== -->
+    <section id="contacto" class="seccion">
+      <div class="contenedor">
+        <h2 class="titulo-seccion">Contáctanos</h2>
+        <p class="subtitulo-seccion">Déjanos tus datos y te llamamos para asesorarte sin compromiso.</p>
+ 
+        <div class="contacto-layout">
+ 
+          <!-- Información -->
+          <div class="info-contacto">
+            <h3>Información de contacto</h3>
+            <p>📍 Av. España 1200, Trujillo, La Libertad</p>
+            <p>📞 (044) 234-567 / +51 944 123 456</p>
+            <p>✉️ ventas@motovelocity.pe</p>
+            <p>🕐 Lun – Sáb: 9:00 am – 7:00 pm</p>
+          </div>
+ 
+          <!-- Formulario -->
+          <form id="formulario" onsubmit="enviarFormulario(event)">
+ 
+            <div class="campo">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+            </div>
+ 
+            <div class="campo">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+            </div>
+ 
+            <div class="campo">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+51 900 000 000">
+            </div>
+ 
+            <div class="campo">
+              <label for="interes">Modelo de interés</label>
+              <select id="interes" name="interes">
+                <option value="" disabled selected>Selecciona una opción</option>
+                <option value="sport">Motos Sport</option>
+                <option value="naked">Motos Naked</option>
+                <option value="touring">Motos Touring</option>
+                <option value="otro">No lo sé aún</option>
+              </select>
+            </div>
+ 
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte?"></textarea>
+            </div>
+ 
+            <div class="campo-checkbox">
+              <input type="checkbox" id="terminos" name="terminos" required>
+              <label for="terminos">Acepto los <a href="#">términos y condiciones</a>.</label>
+            </div>
+ 
+            <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+ 
+            <p id="mensaje-exito" class="mensaje-exito">
+              ¡Gracias! Tu mensaje fue enviado. Te contactaremos pronto.
+            </p>
+ 
+          </form>
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+ 
+ 
+  <!-- ========================
+       PIE DE PÁGINA
+  ======================== -->
+  <footer>
+    <div class="contenedor">
+      <div class="footer-contenido">
+ 
+        <div class="footer-marca">
+          <h3 class="logo">MOTO<span>VÉLOCITY</span></h3>
+          <p>Tu tienda de motos de confianza en Trujillo, Perú.</p>
+        </div>
+ 
+        <div class="footer-links">
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+ 
+        <div class="footer-links">
+          <h4>Marcas</h4>
+          <ul>
+            <li><a href="catalogo.html">Yamaha</a></li>
+            <li><a href="catalogo.html">Honda</a></li>
+            <li><a href="catalogo.html">Kawasaki</a></li>
+            <li><a href="catalogo.html">BMW</a></li>
+          </ul>
+        </div>
+ 
+      </div>
+ 
+      <p class="footer-copy">© 2025 MotoVélocity. Todos los derechos reservados. | Trujillo, Perú</p>
+    </div>
+  </footer>
+ 
+  <!-- Archivo JavaScript externo -->
+  <script src="script.js"></script>
+ 
+</body>
+</html>
