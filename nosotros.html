@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nosotros — MotoVélocity, concesionario oficial en Trujillo.">
+  <title>MotoVélocity — Nosotros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="logo_pagina.png" alt="MotoVélocity" class="logo-img">
+    </a>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="accesorios.html">Accesorios</a></li>
+        <li><a href="nosotros.html" class="active">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="nav-carrito">
+      <button class="btn-carrito" id="btn-carrito" aria-label="Abrir carrito">
+        🛒
+        <span class="carrito-badge" id="carrito-badge">0</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="carrito-overlay" id="carrito-overlay"></div>
+<aside class="carrito-drawer" id="carrito-drawer">
+  <div class="carrito-header">
+    <h3>Tu Carrito</h3>
+    <button class="btn-cerrar-carrito" id="btn-cerrar-carrito">✕</button>
+  </div>
+  <div class="carrito-items" id="carrito-items"></div>
+  <div class="carrito-footer">
+    <div class="carrito-total"><span>Total</span><strong id="carrito-total">S/. 0</strong></div>
+    <button class="btn-checkout" id="btn-checkout">Reservar ahora</button>
+    <button class="btn-vaciar" id="btn-vaciar">Vaciar carrito</button>
+  </div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<main>
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="index.html">Inicio</a> › Nosotros</div>
+      <h1>Nuestra historia</h1>
+      <p>Desde 2013 siendo el concesionario de referencia en Trujillo y La Libertad.</p>
+    </div>
+  </div>
+
+  <!-- Ventajas -->
+  <section class="seccion seccion-oscura">
+    <div class="contenedor">
+      <h2 class="titulo-seccion reveal">¿Por qué elegirnos?</h2>
+      <p class="subtitulo-seccion reveal">Más de 12 años de experiencia, cientos de familias atendidas y tres marcas líderes en un solo lugar.</p>
+      <div class="ventajas-grid">
+        <div class="ventaja reveal">
+          <div class="ventaja-icono">🏆</div>
+          <h3>Distribuidores Oficiales</h3>
+          <p>Concesionario autorizado de Yamaha, Honda y Kawasaki. Garantía de fábrica en todos los modelos.</p>
+        </div>
+        <div class="ventaja reveal">
+          <div class="ventaja-icono">🔧</div>
+          <h3>Taller Certificado</h3>
+          <p>Técnicos con certificación de fábrica. Herramienta diagnóstica de última generación.</p>
+        </div>
+        <div class="ventaja reveal">
+          <div class="ventaja-icono">💳</div>
+          <h3>Financiamiento Flexible</h3>
+          <p>Cuotas desde S/. 400/mes. Aprobación en 24h con tasas competitivas del mercado.</p>
+        </div>
+        <div class="ventaja reveal">
+          <div class="ventaja-icono">📦</div>
+          <h3>Stock Permanente</h3>
+          <p>Más de 30 unidades en exhibición disponibles para entrega inmediata.</p>
+        </div>
+        <div class="ventaja reveal">
+          <div class="ventaja-icono">🛡️</div>
+          <h3>Garantía Extendida</h3>
+          <p>Planes de protección de hasta 3 años para tu total tranquilidad.</p>
+        </div>
+        <div class="ventaja reveal">
+          <div class="ventaja-icono">🌐</div>
+          <h3>Repuestos Originales</h3>
+          <p>Tienda de repuestos con más de 2000 referencias originales de fábrica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contadores -->
+  <section class="seccion seccion-negra">
+    <div class="contenedor">
+      <div class="contadores-grid">
+        <div class="contador-item">
+          <div class="contador-num" data-target="12" data-sufijo="+">0<span>+</span></div>
+          <div class="contador-label">Años en el mercado</div>
+        </div>
+        <div class="contador-item">
+          <div class="contador-num" data-target="500" data-sufijo="+">0<span>+</span></div>
+          <div class="contador-label">Motos vendidas</div>
+        </div>
+        <div class="contador-item">
+          <div class="contador-num" data-target="3" data-sufijo="">0</div>
+          <div class="contador-label">Marcas oficiales</div>
+        </div>
+        <div class="contador-item">
+          <div class="contador-num" data-target="98" data-sufijo="%">0<span>%</span></div>
+          <div class="contador-label">Clientes satisfechos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo -->
+  <section class="seccion seccion-oscura">
+    <div class="contenedor">
+      <h2 class="titulo-seccion reveal">Nuestro equipo</h2>
+      <p class="subtitulo-seccion reveal">Profesionales apasionados por las dos ruedas.</p>
+      <div class="equipo-grid">
+        <div class="equipo-card reveal">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.F9dbA9NpuHjqEX_xgrnylgHaHa?cb=thfvnextfalcon4&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Diego Ríos">
+          <div class="equipo-info">
+            <h4>Diego Ríos</h4>
+            <span>Gerente General</span>
+          </div>
+        </div>
+        <div class="equipo-card reveal">
+          <img src="https://img.freepik.com/premium-photo/young-latin-saleswoman-selling-luxury-cars_513228-179.jpg" alt="María Torres">
+          <div class="equipo-info">
+            <h4>María Torres</h4>
+            <span>Jefa de Ventas</span>
+          </div>
+        </div>
+        <div class="equipo-card reveal">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.-xNNyans0VrxSlTpPanHjgHaHY?cb=thfvnextfalcon4&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Carlos Vega">
+          <div class="equipo-info">
+            <h4>Carlos Vega</h4>
+            <span>Jefe de Taller</span>
+          </div>
+        </div>
+        <div class="equipo-card reveal">
+          <img src="https://static.vecteezy.com/system/resources/previews/029/633/582/non_2x/a-saleswoman-holds-a-smiling-gym-file-behind-it-is-a-new-big-bike-in-the-showroom-free-photo.jpeg" alt="Sofía Paredes">
+          <div class="equipo-info">
+            <h4>Sofía Paredes</h4>
+            <span>Asesora Comercial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band-cta">
+    <div class="contenedor">
+      <h2 class="reveal">Visítanos en Trujillo</h2>
+      <p class="reveal">Av. España 1200 · Lun–Sáb 9am–7pm · Tel. (044) 234-567</p>
+      <a href="contacto.html" class="boton-principal reveal">Contactar ahora</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-contenido contenedor">
+    <div>
+      <img src="logo_pagina.png" alt="MotoVélocity" class="footer-logo-img">
+      <p class="footer-desc">Concesionario oficial de motocicletas en Trujillo, Perú.</p>
+      <div class="footer-social">
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Instagram">ig</a>
+        <a href="#" title="WhatsApp">wa</a>
+        <a href="#" title="YouTube">yt</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="accesorios.html">Accesorios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Marcas</h4>
+      <ul>
+        <li><a href="catalogo.html">Yamaha</a></li>
+        <li><a href="catalogo.html">Honda</a></li>
+        <li><a href="catalogo.html">Kawasaki</a></li>
+        <li><a href="catalogo.html">BMW Motorrad</a></li>
+        <li><a href="catalogo.html">Suzuki</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+51044234567">📞 (044) 234-567</a></li>
+        <li><a href="mailto:ventas@motovelocity.pe">✉️ ventas@motovelocity.pe</a></li>
+        <li><a href="#">📍 Av. España 1200, Trujillo</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom contenedor">
+    <p class="footer-copy">© 2025 MotoVélocity. Todos los derechos reservados.</p>
+    <div class="footer-legal"><a href="#">Privacidad</a><a href="#">Términos</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

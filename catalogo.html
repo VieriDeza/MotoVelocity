@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Catálogo de motos MotoVélocity — Yamaha, Honda, Kawasaki en Trujillo, Perú.">
+  <title>MotoVélocity — Catálogo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="logo_pagina.png" alt="MotoVélocity" class="logo-img">
+    </a>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html" class="active">Catálogo</a></li>
+        <li><a href="accesorios.html">Accesorios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="nav-carrito">
+      <button class="btn-carrito" id="btn-carrito" aria-label="Abrir carrito">
+        🛒
+        <span class="carrito-badge" id="carrito-badge">0</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="carrito-overlay" id="carrito-overlay"></div>
+<aside class="carrito-drawer" id="carrito-drawer">
+  <div class="carrito-header">
+    <h3>Tu Carrito</h3>
+    <button class="btn-cerrar-carrito" id="btn-cerrar-carrito">✕</button>
+  </div>
+  <div class="carrito-items" id="carrito-items"></div>
+  <div class="carrito-footer">
+    <div class="carrito-total"><span>Total</span><strong id="carrito-total">S/. 0</strong></div>
+    <button class="btn-checkout" id="btn-checkout">Reservar ahora</button>
+    <button class="btn-vaciar" id="btn-vaciar">Vaciar carrito</button>
+  </div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<main>
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="index.html">Inicio</a> › Catálogo</div>
+      <h1>Nuestro Catálogo</h1>
+      <p>Encuentra la moto perfecta para tu estilo. Financiamiento disponible en todos los modelos.</p>
+    </div>
+  </div>
+
+  <section class="seccion seccion-clara">
+    <div class="contenedor">
+
+      <!-- Buscador y filtros -->
+      <div class="barra-busqueda">
+        <input type="text" id="buscador" class="input-busqueda" placeholder="🔍  Buscar por marca o modelo...">
+        <div class="filtros-grupo">
+          <button class="filtro-btn activo" data-filtro="todos">Todos</button>
+          <button class="filtro-btn" data-filtro="sport">Sport</button>
+          <button class="filtro-btn" data-filtro="naked">Naked</button>
+          <button class="filtro-btn" data-filtro="adventure">Adventure</button>
+          <button class="filtro-btn" data-filtro="Yamaha">Yamaha</button>
+          <button class="filtro-btn" data-filtro="Honda">Honda</button>
+          <button class="filtro-btn" data-filtro="Kawasaki">Kawasaki</button>
+          <button class="filtro-btn" data-filtro="BMW">BMW</button>
+          <button class="filtro-btn" data-filtro="Suzuki">Suzuki</button>
+        </div>
+      </div>
+
+      <!-- Grid de motos (renderizado por JS) -->
+      <div class="grid-motos" id="grid-motos"></div>
+    </div>
+  </section>
+
+  <!-- Tabla comparativa -->
+  <section class="seccion seccion-oscura">
+    <div class="contenedor">
+      <h2 class="titulo-seccion reveal">Comparativa de modelos</h2>
+      <p class="subtitulo-seccion reveal">Revisa las especificaciones clave de nuestros modelos más populares.</p>
+      <div class="tabla-contenedor reveal">
+        <table>
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Tipo</th>
+              <th>Cilindrada</th>
+              <th>Potencia</th>
+              <th>Peso</th>
+              <th>Precio (S/.)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Yamaha YZF-R3</td><td>Sport</td><td>321 cc</td><td>42 HP</td><td>169 kg</td><td>16,990</td></tr>
+            <tr><td>Honda CB 300R</td><td>Naked</td><td>286 cc</td><td>31 HP</td><td>147 kg</td><td>14,500</td></tr>
+            <tr><td>Kawasaki Ninja 400</td><td>Sport</td><td>399 cc</td><td>45 HP</td><td>167 kg</td><td>19,800</td></tr>
+            <tr><td>Yamaha MT-07</td><td>Naked</td><td>689 cc</td><td>73 HP</td><td>184 kg</td><td>32,900</td></tr>
+            <tr><td>Honda Africa Twin</td><td>Adventure</td><td>1084 cc</td><td>101 HP</td><td>226 kg</td><td>52,900</td></tr>
+            <tr><td>Kawasaki Z650</td><td>Naked</td><td>649 cc</td><td>68 HP</td><td>187 kg</td><td>27,500</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galería -->
+<section class="seccion seccion-clara">
+  <div class="contenedor">
+    <h2 class="titulo-seccion reveal">Galería</h2>
+    <p class="subtitulo-seccion reveal">Imágenes de nuestra colección y sala de exhibición.</p>
+
+    <div class="galeria-grid">
+      <div class="galeria-item reveal">
+        <img src="https://www.yamaha-motor.eu/content/dam/yme/shared/news/2025-tenere-700/2025_tenere_700_news.jpg" alt="Moto deportiva">
+      </div>
+
+      <div class="galeria-item reveal">
+        <img src="https://assets.newatlas.com/dims4/default/3b0896b/2147483647/strip/true/crop/1620x1080+0+0/resize/1620x1080!/format/webp/quality/90/?url=https:%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Fhonda-cb300r-3.jpg" alt="Motor de motocicleta">
+      </div>
+
+      <div class="galeria-item reveal">
+        <img src="https://www.eicma.it/storage/2023/08/aa154d76ebbe42a3a8d2a25ba4b90ff0_008-honda-africa-twin-adventure-sports-2023-mat-iridium-gray-metallic-1-1-5.jpg" alt="Grupo de motocicletas">
+      </div>
+
+      <div class="galeria-item reveal">
+        <img src="https://thfvnext.bing.com/th/id/R.19fbfba0751527ef688c313feea4cf00?rik=luJhP0K9wStafA&pid=ImgRaw&r=0" alt="Yamaha MT-07">
+      </div>
+
+      <div class="galeria-item reveal">
+        <img src="https://www.totalmotorcycle.com/wp-content/uploads/2018/10/2019-Kawasaki-Ninja-400c.jpg" alt="Yamaha R3">
+      </div>
+
+      <div class="galeria-item reveal">
+        <img src="https://oler.com.tw/wp-content/uploads/2024/02/2024-Z650-red-3-768x768.jpg" alt="Kawasaki Ninja">
+      </div>
+
+      <div class="galeria-item reveal">
+        <img src="https://content2.kawasaki.com/ContentStorage/KMC/Products/9592/81ce522f-6b5e-48d0-911d-f84637353e21.jpg" alt="Motocicleta clásica">
+      </div>
+
+      <div class="galeria-item reveal">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.7uHnyaB6GozYlTPccOWuHwHaFI?cb=thfvnextfalcon4&w=650&h=450&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Motocicleta premium">
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="footer-contenido contenedor">
+    <div>
+      <img src="logo_pagina.png" alt="MotoVélocity" class="footer-logo-img">
+      <p class="footer-desc">Concesionario oficial de motocicletas en Trujillo, Perú.</p>
+      <div class="footer-social">
+        <a href="#" title="Facebook">f</a>
+        <a href="#" title="Instagram">ig</a>
+        <a href="#" title="WhatsApp">wa</a>
+        <a href="#" title="YouTube">yt</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="accesorios.html">Accesorios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Marcas</h4>
+      <ul>
+        <li><a href="catalogo.html">Yamaha</a></li>
+        <li><a href="catalogo.html">Honda</a></li>
+        <li><a href="catalogo.html">Kawasaki</a></li>
+        <li><a href="catalogo.html">BMW Motorrad</a></li>
+        <li><a href="catalogo.html">Suzuki</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+51044234567">📞 (044) 234-567</a></li>
+        <li><a href="mailto:ventas@motovelocity.pe">✉️ ventas@motovelocity.pe</a></li>
+        <li><a href="#">📍 Av. España 1200, Trujillo</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom contenedor">
+    <p class="footer-copy">© 2025 MotoVélocity. Todos los derechos reservados.</p>
+    <div class="footer-legal"><a href="#">Privacidad</a><a href="#">Términos</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
