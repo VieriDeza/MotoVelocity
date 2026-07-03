@@ -133,7 +133,7 @@ var MOTOS = [
     modelo: 'Ninja 400',
     tipo: 'sport',
     precio: 19800,
-    img: 'https://www.totalmotorcycle.com/wp-content/uploads/2018/10/2019-Kawasaki-Ninja-400c.jpg',
+    img: 'https://tse3.mm.bing.net/th/id/OIP.U1FVawfwlZgWi26wyJFdFgHaFL?cb=thfvnextfalcon4&rs=1&pid=ImgDetMain&o=7&rm=3',
     cc: '399cc', hp: '45 HP', peso: '167 kg',
     tanque: '14 L', asiento: '785 mm', transmision: '6 vel.',
     freno_del: 'Disco 310 mm', freno_tras: 'Disco 220 mm',
