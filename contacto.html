@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacto — MotoVélocity, concesionario oficial en Trujillo.">
+  <title>MotoVélocity — Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<script>try{if(localStorage.getItem('mv_tema')==='oscuro')document.body.classList.add('tema-oscuro');}catch(e){}</script>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="logo_pagina.png" alt="MotoVélocity" class="logo-img">
+    </a>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="comparador.html">Comparador</a></li>
+        <li><a href="accesorios.html">Accesorios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="nav-carrito">
+      <button class="btn-tema" id="btn-tema" aria-label="Cambiar tema" title="Cambiar tema claro/oscuro">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" class="icono-sol"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" class="icono-luna"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="btn-carrito" id="btn-carrito" aria-label="Abrir carrito">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="carrito-badge" id="carrito-badge">0</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="carrito-overlay" id="carrito-overlay"></div>
+<aside class="carrito-drawer" id="carrito-drawer">
+  <div class="carrito-header">
+    <h3>Tu Carrito</h3>
+    <button class="btn-cerrar-carrito" id="btn-cerrar-carrito" aria-label="Cerrar carrito">&times;</button>
+  </div>
+  <div class="carrito-items" id="carrito-items"></div>
+  <div class="carrito-footer">
+    <div class="carrito-total"><span>Total</span><strong id="carrito-total">S/. 0</strong></div>
+    <button class="btn-checkout" id="btn-checkout">Reservar ahora</button>
+    <button class="btn-vaciar" id="btn-vaciar">Vaciar carrito</button>
+  </div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<main>
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="index.html">Inicio</a> &rsaquo; Contacto</div>
+      <h1>Contáctanos</h1>
+      <p>Déjanos tus datos y un asesor te llamará sin compromiso para ayudarte a elegir tu moto ideal.</p>
+    </div>
+  </div>
+
+  <section class="seccion seccion-clara">
+    <div class="contenedor">
+      <div class="contacto-layout">
+
+        <!-- Info -->
+        <address class="info-contacto reveal-left">
+          <h3>Informacion de contacto</h3>
+
+          <div class="contacto-dato">
+            <div class="contacto-dato-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div class="contacto-dato-text">
+              <strong>Direccion</strong>
+              <span>Av. España 1200, Trujillo,<br>La Libertad, Perú</span>
+            </div>
+          </div>
+
+          <div class="contacto-dato">
+            <div class="contacto-dato-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.9a16 16 0 0 0 6.16 6.16l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+            <div class="contacto-dato-text">
+              <strong>Telefono</strong>
+              <span>(044) 234-567<br>+51 944 123 456</span>
+            </div>
+          </div>
+
+          <div class="contacto-dato">
+            <div class="contacto-dato-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+            <div class="contacto-dato-text">
+              <strong>Correo electronico</strong>
+              <span>ventas@motovelocity.pe</span>
+            </div>
+          </div>
+
+          <div class="horario-tabla">
+            <h4>Horario de atención</h4>
+            <div class="horario-fila"><span>Lunes – Viernes</span><span>9:00 am – 7:00 pm</span></div>
+            <div class="horario-fila"><span>Sábado</span><span>9:00 am – 5:00 pm</span></div>
+            <div class="horario-fila"><span>Domingo</span><span>Cerrado</span></div>
+          </div>
+        </address>
+
+        <!-- Formulario -->
+        <div class="form-contacto reveal-right">
+          <form id="formulario">
+
+            <div class="form-row">
+              <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+              </div>
+              <div class="campo">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="campo">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="+51 900 000 000">
+              </div>
+              <div class="campo">
+                <label for="interes">Modelo de interés</label>
+                <select id="interes" name="interes">
+                  <option value="" disabled selected>Selecciona un modelo</option>
+                  <optgroup label="── Yamaha ──">
+                    <option value="yzf-r3">Yamaha YZF-R3 — S/. 16,990</option>
+                    <option value="mt07">Yamaha MT-07 — S/. 32,900</option>
+                    <option value="mt09">Yamaha MT-09 — S/. 44,900</option>
+                    <option value="tenere700">Yamaha Ténéré 700 — S/. 38,500</option>
+                  </optgroup>
+                  <optgroup label="── Honda ──">
+                    <option value="cb300r">Honda CB 300R — S/. 14,500</option>
+                    <option value="cb500f">Honda CB 500F — S/. 22,900</option>
+                    <option value="cbr600rr">Honda CBR 600RR — S/. 48,900</option>
+                    <option value="africatwin">Honda Africa Twin — S/. 52,900</option>
+                  </optgroup>
+                  <optgroup label="── Kawasaki ──">
+                    <option value="ninja400">Kawasaki Ninja 400 — S/. 19,800</option>
+                    <option value="z650">Kawasaki Z650 — S/. 27,500</option>
+                    <option value="z900">Kawasaki Z900 — S/. 38,900</option>
+                    <option value="versys650">Kawasaki Versys 650 — S/. 29,900</option>
+                  </optgroup>
+                  <optgroup label="── BMW Motorrad ──">
+                    <option value="g310r">BMW G 310 R — S/. 24,900</option>
+                    <option value="f900r">BMW F 900 R — S/. 62,900</option>
+                    <option value="gs1250">BMW GS 1250 — S/. 89,900</option>
+                  </optgroup>
+                  <optgroup label="── Suzuki ──">
+                    <option value="gsxs750">Suzuki GSX-S750 — S/. 34,500</option>
+                    <option value="vstrom650">Suzuki V-Strom 650 — S/. 31,900</option>
+                    <option value="gsxr1000r">Suzuki GSX-R1000R — S/. 78,900</option>
+                  </optgroup>
+                  <option value="otro">No lo sé aún / Asesoría general</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" placeholder="¿En qué podemos ayudarte? ¿Tienes alguna pregunta sobre financiamiento, stock o modelos específicos?"></textarea>
+            </div>
+
+            <div class="campo-checkbox">
+              <input type="checkbox" id="terminos" name="terminos" required>
+              <label for="terminos">Acepto los <a href="#">términos y condiciones</a> y la <a href="#">política de privacidad</a>. MotoVélocity usará mis datos únicamente para contactarme.</label>
+            </div>
+
+            <button type="submit" class="boton-enviar">Enviar mensaje</button>
+
+            <p id="mensaje-exito" class="mensaje-exito">
+              Mensaje recibido. Te contactaremos en menos de 24 horas.
+            </p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa placeholder -->
+  <section class="seccion seccion-oscura" style="padding: 0;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.5!2d-79.0215!3d-8.1116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMDYnNDIuMiJTIDc5wrAwMScxNy40Ilc!5e0!3m2!1ses!2spe!4v1620000000000!5m2!1ses!2spe"
+      width="100%"
+      height="360"
+      style="border:0; display:block; filter: grayscale(60%) invert(5%);"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Ubicación MotoVélocity en Trujillo">
+    </iframe>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-contenido contenedor">
+    <div>
+      <img src="logo_pagina.png" alt="MotoVélocity" class="footer-logo-img">
+      <p class="footer-desc">Concesionario oficial de motocicletas en Trujillo, Perú.</p>
+      <div class="footer-social">
+        <a href="#" title="Facebook" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg></a>
+        <a href="#" title="Instagram" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" title="WhatsApp" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.97L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.4 1.32-1.93 1.4-.49.08-1.11.11-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94s.72-2.08.98-2.37c.24-.27.53-.33.71-.33s.35 0 .5.01c.16.01.38-.06.59.45.24.58.8 2.01.87 2.15.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.48-.14.14-.28.28-.12.56.16.28.7 1.16 1.51 1.88 1.04.93 1.91 1.22 2.19 1.36.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.19-.27.37-.22.62-.13.26.09 1.64.77 1.92.91.28.14.47.21.53.33.07.12.07.68-.17 1.36z"/></svg></a>
+        <a href="#" title="YouTube" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.5s-.23-1.64-.94-2.36c-.9-.94-1.9-.95-2.36-1C16.9 3 12 3 12 3h-.01s-4.9 0-8.19.14c-.46.05-1.46.06-2.36 1C.73 4.86.5 6.5.5 6.5S.26 8.42.26 10.35v1.79c0 1.93.24 3.85.24 3.85s.23 1.64.94 2.36c.9.95 2.08.92 2.6 1.02C5.9 19.5 12 19.56 12 19.56s4.9-.01 8.2-.15c.46-.06 1.46-.07 2.36-1.02.71-.72.94-2.36.94-2.36s.24-1.92.24-3.85v-1.79c0-1.93-.24-3.85-.24-3.85zM9.55 14.4V8.6l6.27 2.91-6.27 2.89z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="accesorios.html">Accesorios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Marcas</h4>
+      <ul>
+        <li><a href="catalogo.html">Yamaha</a></li>
+        <li><a href="catalogo.html">Honda</a></li>
+        <li><a href="catalogo.html">Kawasaki</a></li>
+        <li><a href="catalogo.html">BMW Motorrad</a></li>
+        <li><a href="catalogo.html">Suzuki</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+51044234567">(044) 234-567</a></li>
+        <li><a href="mailto:ventas@motovelocity.pe">ventas@motovelocity.pe</a></li>
+        <li><a href="#">Av. España 1200, Trujillo</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom contenedor">
+    <p class="footer-copy">&copy; <time datetime="2025">2025</time> MotoVelocity. Todos los derechos reservados.</p>
+    <div class="footer-legal"><a href="#">Privacidad</a><a href="#">Términos</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

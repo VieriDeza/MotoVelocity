@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nosotros — MotoVélocity, concesionario oficial en Trujillo.">
+  <title>MotoVélocity — Nosotros</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+<script>try{if(localStorage.getItem('mv_tema')==='oscuro')document.body.classList.add('tema-oscuro');}catch(e){}</script>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="logo_pagina.png" alt="MotoVélocity" class="logo-img">
+    </a>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="comparador.html">Comparador</a></li>
+        <li><a href="accesorios.html">Accesorios</a></li>
+        <li><a href="nosotros.html" class="active">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="nav-carrito">
+      <button class="btn-tema" id="btn-tema" aria-label="Cambiar tema" title="Cambiar tema claro/oscuro">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" class="icono-sol"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" class="icono-luna"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+      <button class="btn-carrito" id="btn-carrito" aria-label="Abrir carrito">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="carrito-badge" id="carrito-badge">0</span>
+      </button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="carrito-overlay" id="carrito-overlay"></div>
+<aside class="carrito-drawer" id="carrito-drawer">
+  <div class="carrito-header">
+    <h3>Tu Carrito</h3>
+    <button class="btn-cerrar-carrito" id="btn-cerrar-carrito" aria-label="Cerrar carrito">&times;</button>
+  </div>
+  <div class="carrito-items" id="carrito-items"></div>
+  <div class="carrito-footer">
+    <div class="carrito-total"><span>Total</span><strong id="carrito-total">S/. 0</strong></div>
+    <button class="btn-checkout" id="btn-checkout">Reservar ahora</button>
+    <button class="btn-vaciar" id="btn-vaciar">Vaciar carrito</button>
+  </div>
+</aside>
+<div class="toast" id="toast"></div>
+
+<main>
+  <div class="page-hero">
+    <div class="page-hero-inner">
+      <div class="breadcrumb"><a href="index.html">Inicio</a> &rsaquo; Nosotros</div>
+      <h1>Nuestra historia</h1>
+      <p>Desde 2013 siendo el concesionario de referencia en Trujillo y La Libertad.</p>
+    </div>
+  </div>
+
+  <!-- Ventajas -->
+  <section class="seccion seccion-oscura">
+    <div class="contenedor">
+      <h2 class="titulo-seccion reveal">¿Por qué elegirnos?</h2>
+      <p class="subtitulo-seccion reveal">Más de 12 años de experiencia, cientos de familias atendidas y tres marcas líderes en un solo lugar.</p>
+      <div class="ventajas-grid">
+        <div class="ventaja reveal">
+          <div class="ventaja-icono"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <h3>Distribuidores Oficiales</h3>
+          <p>Concesionario autorizado de Yamaha, Honda y Kawasaki. Garantía de fábrica en todos los modelos.</p>
+        </div>
+        <div class="ventaja reveal">
+          <div class="ventaja-icono"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h3>Taller Certificado</h3>
+          <p>Técnicos con certificación de fábrica. Herramienta diagnóstica de última generación.</p>
+        </div>
+        <div class="ventaja reveal">
+          <div class="ventaja-icono"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+          <h3>Financiamiento Flexible</h3>
+          <p>Cuotas desde S/. 400/mes. Aprobación en 24h con tasas competitivas del mercado.</p>
+        </div>
+        <div class="ventaja reveal">
+          <div class="ventaja-icono"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+          <h3>Stock Permanente</h3>
+          <p>Más de 30 unidades en exhibición disponibles para entrega inmediata.</p>
+        </div>
+        <div class="ventaja reveal">
+          <div class="ventaja-icono"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Garantía Extendida</h3>
+          <p>Planes de protección de hasta 3 años para tu total tranquilidad.</p>
+        </div>
+        <div class="ventaja reveal">
+          <div class="ventaja-icono"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+          <h3>Repuestos Originales</h3>
+          <p>Tienda de repuestos con más de 2000 referencias originales de fábrica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contadores -->
+  <section class="seccion seccion-negra">
+    <div class="contenedor">
+      <div class="contadores-grid">
+        <div class="contador-item">
+          <div class="contador-num" data-target="12" data-sufijo="+">0<span>+</span></div>
+          <div class="contador-label">Años en el mercado</div>
+        </div>
+        <div class="contador-item">
+          <div class="contador-num" data-target="500" data-sufijo="+">0<span>+</span></div>
+          <div class="contador-label">Motos vendidas</div>
+        </div>
+        <div class="contador-item">
+          <div class="contador-num" data-target="3" data-sufijo="">0</div>
+          <div class="contador-label">Marcas oficiales</div>
+        </div>
+        <div class="contador-item">
+          <div class="contador-num" data-target="98" data-sufijo="%">0<span>%</span></div>
+          <div class="contador-label">Clientes satisfechos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Equipo -->
+  <section class="seccion seccion-oscura">
+    <div class="contenedor">
+      <h2 class="titulo-seccion reveal">Nuestro equipo</h2>
+      <p class="subtitulo-seccion reveal">Profesionales apasionados por las dos ruedas.</p>
+      <div class="equipo-grid">
+        <div class="equipo-card reveal">
+          <img src="https://tse1.mm.bing.net/th/id/OIP.F9dbA9NpuHjqEX_xgrnylgHaHa?cb=thfvnextfalcon4&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Diego Ríos">
+          <div class="equipo-info">
+            <h4>Diego Ríos</h4>
+            <span>Gerente General</span>
+          </div>
+        </div>
+        <div class="equipo-card reveal">
+          <img src="https://img.freepik.com/premium-photo/young-latin-saleswoman-selling-luxury-cars_513228-179.jpg" alt="María Torres">
+          <div class="equipo-info">
+            <h4>María Torres</h4>
+            <span>Jefa de Ventas</span>
+          </div>
+        </div>
+        <div class="equipo-card reveal">
+          <img src="https://tse2.mm.bing.net/th/id/OIP.-xNNyans0VrxSlTpPanHjgHaHY?cb=thfvnextfalcon4&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Carlos Vega">
+          <div class="equipo-info">
+            <h4>Carlos Vega</h4>
+            <span>Jefe de Taller</span>
+          </div>
+        </div>
+        <div class="equipo-card reveal">
+          <img src="https://static.vecteezy.com/system/resources/previews/029/633/582/non_2x/a-saleswoman-holds-a-smiling-gym-file-behind-it-is-a-new-big-bike-in-the-showroom-free-photo.jpeg" alt="Sofía Paredes">
+          <div class="equipo-info">
+            <h4>Sofía Paredes</h4>
+            <span>Asesora Comercial</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band-cta">
+    <div class="contenedor">
+      <h2 class="reveal">Visítanos en Trujillo</h2>
+      <p class="reveal">Av. España 1200 · Lun–Sáb 9am–7pm · Tel. (044) 234-567</p>
+      <a href="contacto.html" class="boton-principal reveal">Contactar ahora</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-contenido contenedor">
+    <div>
+      <img src="logo_pagina.png" alt="MotoVélocity" class="footer-logo-img">
+      <p class="footer-desc">Concesionario oficial de motocicletas en Trujillo, Perú.</p>
+      <div class="footer-social">
+        <a href="#" title="Facebook" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12.06C22 6.51 17.52 2 12 2S2 6.51 2 12.06c0 5.02 3.66 9.18 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.9 3.77-3.9 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.78-1.63 1.57v1.88h2.78l-.44 2.91h-2.34V22c4.78-.76 8.44-4.92 8.44-9.94z"/></svg></a>
+        <a href="#" title="Instagram" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.3"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" title="WhatsApp" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.46 1.33 4.97L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91C21.96 6.45 17.5 2 12.04 2zm5.8 14.02c-.24.68-1.4 1.32-1.93 1.4-.49.08-1.11.11-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94s.72-2.08.98-2.37c.24-.27.53-.33.71-.33s.35 0 .5.01c.16.01.38-.06.59.45.24.58.8 2.01.87 2.15.07.14.12.31.02.5-.09.19-.14.31-.28.48-.14.16-.29.36-.42.48-.14.14-.28.28-.12.56.16.28.7 1.16 1.51 1.88 1.04.93 1.91 1.22 2.19 1.36.28.14.44.12.6-.07.16-.19.68-.79.87-1.06.19-.27.37-.22.62-.13.26.09 1.64.77 1.92.91.28.14.47.21.53.33.07.12.07.68-.17 1.36z"/></svg></a>
+        <a href="#" title="YouTube" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.5s-.23-1.64-.94-2.36c-.9-.94-1.9-.95-2.36-1C16.9 3 12 3 12 3h-.01s-4.9 0-8.19.14c-.46.05-1.46.06-2.36 1C.73 4.86.5 6.5.5 6.5S.26 8.42.26 10.35v1.79c0 1.93.24 3.85.24 3.85s.23 1.64.94 2.36c.9.95 2.08.92 2.6 1.02C5.9 19.5 12 19.56 12 19.56s4.9-.01 8.2-.15c.46-.06 1.46-.07 2.36-1.02.71-.72.94-2.36.94-2.36s.24-1.92.24-3.85v-1.79c0-1.93-.24-3.85-.24-3.85zM9.55 14.4V8.6l6.27 2.91-6.27 2.89z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="accesorios.html">Accesorios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Marcas</h4>
+      <ul>
+        <li><a href="catalogo.html">Yamaha</a></li>
+        <li><a href="catalogo.html">Honda</a></li>
+        <li><a href="catalogo.html">Kawasaki</a></li>
+        <li><a href="catalogo.html">BMW Motorrad</a></li>
+        <li><a href="catalogo.html">Suzuki</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacto</h4>
+      <ul>
+        <li><a href="tel:+51044234567">(044) 234-567</a></li>
+        <li><a href="mailto:ventas@motovelocity.pe">ventas@motovelocity.pe</a></li>
+        <li><a href="#">Av. España 1200, Trujillo</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom contenedor">
+    <p class="footer-copy">&copy; <time datetime="2025">2025</time> MotoVelocity. Todos los derechos reservados.</p>
+    <div class="footer-legal"><a href="#">Privacidad</a><a href="#">Términos</a></div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
